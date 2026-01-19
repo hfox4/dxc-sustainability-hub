@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Final Quiz</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h2>Final Quiz</h2>
+    <p>Answer the questions below. Score >= 66% will unlock a certificate.</p>
+
+    <form id="quiz-form">
+      <fieldset>
+        <legend>1) What is 2 + 2?</legend>
+        <label><input type="radio" name="q1" value="3"> 3</label>
+        <label><input type="radio" name="q1" value="4"> 4</label>
+        <label><input type="radio" name="q1" value="5"> 5</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2) Which is a primary color?</legend>
+        <label><input type="radio" name="q2" value="green"> Green</label>
+        <label><input type="radio" name="q2" value="red"> Red</label>
+        <label><input type="radio" name="q2" value="purple"> Purple</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>3) HTML stands for?</legend>
+        <label><input type="radio" name="q3" value="HyperText Markup Language"> HyperText Markup Language</label>
+        <label><input type="radio" name="q3" value="Home Tool Markup Language"> Home Tool Markup Language</label>
+        <label><input type="radio" name="q3" value="Hyperlinks Text Management"> Hyperlinks Text Management</label>
+      </fieldset>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <div id="result" class="result"></div>
+
+    <div id="certificate-area" style="display:none; margin-top:1rem;">
+      <label>Your name for the certificate: <input id="cert-name" type="text" placeholder="Full Name"></label>
+      <button id="download-cert" class="btn">Download Certificate (PDF)</button>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
